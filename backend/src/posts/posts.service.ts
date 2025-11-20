@@ -3,16 +3,8 @@ import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { Post, PostStatus, Platform } from './entities/post.entity';
 import { SchedulerService } from '../scheduler/scheduler.service';
-
-export interface CreatePostDto {
-    content: string;
-    platforms: Platform[];
-    userId: string;
-}
-
-export interface SchedulePostDto {
-    scheduledFor: Date;
-}
+import { CreatePostDto } from './dto/create-post.dto';
+import { SchedulePostDto } from './dto/schedule-post.dto';
 
 @Injectable()
 export class PostsService {

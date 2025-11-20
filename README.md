@@ -33,6 +33,13 @@ A beautiful, distraction-free social media scheduling platform targeting tech fo
 - Docker & Docker Compose
 - npm
 
+### 📚 API Documentation
+
+The backend API documentation is available via Swagger UI.
+
+1. Start the backend: `npm run start:dev` (in `backend` directory)
+2. Open [http://localhost:3001/api](http://localhost:3001/api) in your browser
+
 ### Installation
 
 1. **Clone the repository**
